@@ -53,10 +53,10 @@ total = 0
 print("\nYour order is as follows: ")
 for item in order.data["Products"]:
 	price = item["Price"]
-	print(item["Name"] + " rupees" + price)
+	print(item["Name"] + " $" + price)
 	total += float(price)
 
-print("\nYour order total is: rupees" + str(total) + " + TAX\n")
+print("\nYour order total is: $" + str(total) + " + TAX\n")
 
 payment = input("\nWill you be paying CASH or CREDIT CARD? (CASH, CREDIT CARD)")
 if payment.lower() in ["card", "credit card"]:
